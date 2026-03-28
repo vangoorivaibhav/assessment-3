@@ -1,0 +1,33 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Problem 8</title>
+<style>
+.bottom-right { position: fixed; bottom: 10px; right: 10px; }
+</style>
+
+<script>
+function table() {
+    var n = document.getElementById("num").value;
+    var i = 1, out = "";
+
+    do {
+        out += n + " x " + i + " = " + (n*i) + "<br>";
+        i++;
+    } while(i <= 10);
+
+    document.getElementById("res").innerHTML = out;
+}
+</script>
+</head>
+
+<body>
+<input type="number" id="num">
+<button onclick="table()">Generate</button>
+<p id="res"></p>
+
+<div class="bottom-right">24BCE0572, VAIBHAV VANGOORI</div>
+</body>
+</html>
+
