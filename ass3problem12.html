@@ -1,0 +1,45 @@
+
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problem 12</title>
+<style>
+.bottom-right { position: fixed; bottom: 10px; right: 10px; }
+</style>
+
+<script>
+function validate() {
+    var skills = document.getElementsByName("skill");
+    var selected = [];
+
+    for(var i=0;i<skills.length;i++) {
+        if(skills[i].checked) selected.push(skills[i].value);
+    }
+
+    if(selected.length < 3)
+        alert("Select at least 3 skills");
+    else
+        document.getElementById("res").innerHTML = selected.join(", ");
+}
+</script>
+</head>
+
+<body>
+<input type="checkbox" name="skill" value="Java">Java
+<input type="checkbox" name="skill" value="Python">Python
+<input type="checkbox" name="skill" value="JS">JS
+<input type="checkbox" name="skill" value="C++">C++
+
+<button onclick="validate()">Submit</button>
+<p id="res"></p>
+
+<div class="bottom-right">24BCE0572, VAIBHAV VANGOORI</div>
+</body>
+</html>
+
+
+
+
+
+
