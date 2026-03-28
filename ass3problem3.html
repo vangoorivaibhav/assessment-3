@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problem 3</title>
+<style>
+.bottom-right { position: fixed; bottom: 10px; right: 10px; }
+</style>
+
+<script>
+function generateEmail(form) {
+    var first = form.fname.value;   
+    var last = form.lname.value;    
+
+
+    var email = first + "." + last + "@park.edu";
+
+  
+    document.getElementById("result").innerHTML = email;
+
+    form.reset();           
+    form.fname.focus();     
+}
+</script>
+</head>
+
+<body>
+<h1>Email Generator</h1>
+
+<form>
+First Name: <input type="text" name="fname"><br><br>
+Last Name: <input type="text" name="lname"><br><br>
+
+<button type="button" onclick="generateEmail(this.form)">Generate</button>
+</form>
+
+<p id="result"></p>
+
+<div class="bottom-right">24BCE0572, VAIBHAV VANGOORI</div>
+</body>
+</html>
