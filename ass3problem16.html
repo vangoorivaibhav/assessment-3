@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problem 16</title>
+<style>
+img {
+    position: absolute;
+    width: 150px;
+    cursor: pointer;
+}
+.bottom-right { position: fixed; bottom: 10px; right: 10px; }
+</style>
+
+<script>
+var topIndex = 1;
+
+function bringFront(img) {
+    img.style.zIndex = ++topIndex;
+}
+</script>
+</head>
+
+<body>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" style="top:50px;left:50px;" onclick="bringFront(this)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" style="top:80px;left:80px;" onclick="bringFront(this)">
+
+<div class="bottom-right">24BCE0572, VAIBHAV VANGOORI</div>
+
+</body>
+</html>
