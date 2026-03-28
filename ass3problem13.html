@@ -1,0 +1,45 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Problem 13</title>
+<style>
+.bottom-right { position: fixed; bottom: 10px; right: 10px; }
+</style>
+
+<script>
+function total() {
+    var items = document.querySelectorAll("input[type=checkbox]:checked");
+    var sum = 0;
+
+    for (var i of items) {
+        sum += parseFloat(i.value);
+    }
+
+    document.getElementById("res").innerHTML = "Total: " + sum;
+}
+</script>
+</head>
+
+<body>
+
+<input type="checkbox" value="100"> Item1 - ₹100 <br>
+<input type="checkbox" value="200"> Item2 - ₹200 <br>
+<input type="checkbox" value="300"> Item3 - ₹300 <br><br>
+
+<button onclick="total()">Total</button>
+<p id="res"></p>
+
+<div class="bottom-right">24BCE0572,VAIBHAV VANGOORI</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
