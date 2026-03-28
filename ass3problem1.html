@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Problem 1</title>
+    <style>
+        .bottom-right {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+
+    <script>
+        // Function to display message using outerHTML
+        function showMessage() {
+            var element = document.getElementById("msg");
+            element.outerHTML = "<p id='msg'>Hello, world!</p>";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Hello World Program</h1>
+
+    <!-- Button to trigger function -->
+    <button onclick="showMessage()">Click Me</button>
+
+    <!-- Placeholder paragraph -->
+    <p id="msg"></p>
+
+    <div class="bottom-right">
+        24BCE0572, VAIBHAV VANGOORI
+    </div>
+
+</body>
+</html>
+
