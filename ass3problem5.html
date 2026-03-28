@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problem 5</title>
+<style>
+.bottom-right { position: fixed; bottom: 10px; right: 10px; }
+</style>
+
+<script>
+function calculate(op) {
+    var n1 = parseFloat(document.getElementById("n1").value);
+    var n2 = parseFloat(document.getElementById("n2").value);
+    var result;
+
+    switch(op) {
+        case '+': result = n1 + n2; break;
+        case '-': result = n1 - n2; break;
+        case '*': result = n1 * n2; break;
+        case '/':
+            if(n2 == 0) result = "Cannot divide by zero";
+            else result = n1 / n2;
+            break;
+    }
+
+    document.getElementById("res").innerHTML = result;
+}
+</script>
+</head>
+
+<body>
+<h1>Calculator</h1>
+
+<input type="number" id="n1" step="any">
+<input type="number" id="n2" step="any"><br><br>
+
+<button onclick="calculate('+')">+</button>
+<button onclick="calculate('-')">-</button>
+<button onclick="calculate('*')">*</button>
+<button onclick="calculate('/')">/</button>
+
+<p id="res"></p>
+
+<div class="bottom-right">24BCE0572, VAIBHAV VANGOORI</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
