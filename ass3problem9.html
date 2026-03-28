@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problem 9</title>
+<style>
+.bottom-right { position: fixed; bottom: 10px; right: 10px; }
+</style>
+
+<script>
+function showColor() {
+    var colors = document.getElementsByName("color");
+
+    for(var c of colors) {
+        if(c.checked) {
+            document.getElementById("res").innerHTML = c.value;
+        }
+    }
+}
+</script>
+</head>
+
+<body>
+<input type="radio" name="color" value="Red">Red
+<input type="radio" name="color" value="Green">Green
+<input type="radio" name="color" value="Blue">Blue
+
+<button onclick="showColor()">Show</button>
+<p id="res"></p>
+
+<div class="bottom-right">24BCE0572, VAIBHAV VANGOORI</div>
+</body>
+</html>
+
+
+
