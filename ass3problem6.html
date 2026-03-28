@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problem 6</title>
+<style>
+.bottom-right { position: fixed; bottom: 10px; right: 10px; }
+</style>
+
+<script>
+var students = []; // array
+
+function addStudent() {
+    var name = document.getElementById("name").value;
+    var age = document.getElementById("age").value;
+
+    var student = {name:name, age:age};
+
+    students.push(student); // add to array
+
+    display();
+}
+
+function display() {
+    var output = "<table border=1><tr><th>Name</th><th>Age</th></tr>";
+
+    for(var s of students) {
+        output += "<tr><td>"+s.name+"</td><td>"+s.age+"</td></tr>";
+    }
+
+    output += "</table>";
+    document.getElementById("out").innerHTML = output;
+}
+</script>
+</head>
+
+<body>
+<h1>Student System</h1>
+
+Name: <input type="text" id="name">
+Age: <input type="number" id="age">
+<button onclick="addStudent()">Add</button>
+
+<div id="out"></div>
+
+<div class="bottom-right">24BCE0572,VAIBHAV VANGOORI</div>
+</body>
+</html>
+
