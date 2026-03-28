@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problem 10</title>
+<style>
+.bottom-right { position: fixed; bottom: 10px; right: 10px; }
+</style>
+
+<script>
+function count() {
+    var subjects = document.getElementsByName("sub");
+    var arr = [];
+
+    for(var s of subjects) {
+        if(s.checked) arr.push(s.value);
+    }
+
+    document.getElementById("res").innerHTML =
+        "Count: " + arr.length + "<br>" + arr.join(", ");
+}
+</script>
+</head>
+
+<body>
+<input type="checkbox" name="sub" value="Math">Math
+<input type="checkbox" name="sub" value="Physics">Physics
+<input type="checkbox" name="sub" value="Chemistry">Chemistry
+<input type="checkbox" name="sub" value="CS">CS
+
+<button onclick="count()">Check</button>
+<p id="res"></p>
+
+<div class="bottom-right">24BCE0572,VAIBHAV VANGOORI</div>
+</body>
+</html>
+
+
+
+
