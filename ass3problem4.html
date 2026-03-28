@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Problem 1</title>
+  <style>
+    .bottom-right {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rectangle Area Calculator</h1>
+  <p>Demonstrating loose typing in JavaScript using <code>var</code> and <code>innerHTML</code>.</p>
+
+  <div id="integerResult"></div>
+  <div id="floatResult"></div>
+  <div id="typeDemo"></div>
+
+  <!-- Bottom Right Text -->
+  <div class="bottom-right">
+    24BCE0572, VAIBHAV VANGOORI
+  </div>
+
+  <script>
+   
+    var rectangleLength = 10;
+    var rectangleWidth = 5;
+    var rectangleArea = rectangleLength * rectangleWidth;
+
+    document.getElementById("integerResult").innerHTML =
+      "<h2>Integer Calculation</h2>" +
+      "<p>Length: " + rectangleLength + "</p>" +
+      "<p>Width: " + rectangleWidth + "</p>" +
+      "<p><strong>Area = " + rectangleArea + "</strong></p>";
+
+    rectangleLength = 7.5;
+    rectangleWidth = 3.2;
+    rectangleArea = rectangleLength * rectangleWidth;
+
+    document.getElementById("floatResult").innerHTML =
+      "<h2>Float Calculation</h2>" +
+      "<p>Length: " + rectangleLength + "</p>" +
+      "<p>Width: " + rectangleWidth + "</p>" +
+      "<p><strong>Area = " + rectangleArea.toFixed(2) + "</strong></p>";
+
+   
+    
+       
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
