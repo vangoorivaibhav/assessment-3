@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problem 14</title>
+<style>
+.italic { font-style: italic; }
+.bold { font-weight: bold; }
+.small { font-variant: small-caps; }
+.bottom-right { position: fixed; bottom: 10px; right: 10px; }
+</style>
+
+<script>
+function apply(style) {
+    document.getElementById("text").className = style;
+}
+</script>
+</head>
+
+<body>
+<p id="text">Sample Text</p>
+
+<button onclick="apply('italic')">Italic</button>
+<button onclick="apply('bold')">Bold</button>
+<button onclick="apply('small')">Small Caps</button>
+
+<div class="bottom-right">24BCE0572, VAIBHAV VANGOORI</div>
+</body>
+</html>
